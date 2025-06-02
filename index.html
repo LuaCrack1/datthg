@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Executor Android & IOS & PC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+   /* Ẩn toàn bộ nội dung chính trên thiết bị có chiều rộng nhỏ hơn 768px (điện thoại, tablet) */
+@media (max-width: 767px) {
+  body > * {
+    display: none !important;
+  }
+
+  /* Hiện thông báo thay thế */
+  body::before {
+    content: "Please enable desktop mode.";
+    display: block;
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    margin: 100px auto;
+  }
+}
+
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      padding-top: 4.5rem;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 1030;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .btn-discord {
+      background: #5865F2;
+      border: none;
+      font-weight: 600;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .btn-discord:hover {
+      background: #4752c4;
+      text-decoration: none;
+      color: white;
+    }
+    .executor-card {
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .executor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+    .executor-img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: white;
+      padding: 10px;
+      flex-shrink: 0;
+    }
+    .executor-info {
+      flex: 1 1 300px;
+    }
+    .executor-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .platform-label {
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+      color: #ddd;
+    }
+    .download-links a {
+      display: inline-block;
+      margin-right: 0.8rem;
+      margin-bottom: 0.3rem;
+      background: #764ba2;
+      color: white;
+      padding: 0.35rem 0.7rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .download-links a:hover {
+      background: #5b357a;
+      text-decoration: none;
+      color: white;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #bbb;
+      padding-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      margin-bottom: 2rem;
+      max-width: 100%;
+      height: 360px;
+    }
+    @media (max-width: 576px) {
+      .executor-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .executor-img {
+        margin: 0 auto;
+      }
+      .executor-info {
+        flex: unset;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dashboard Executor Android & IOS & PC</h1>
+  <a href="https://discord.gg/ncf9A4YHDE" target="_blank" rel="noopener" class="btn-discord">Join Discord</a>
+</header>
+
+<main class="container mt-4">
+
+</div>
+
+  <!-- Executor Cards -->
+
+  <!-- Arceus X -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1378341613557911582/tai_xuong.png?ex=683ce8e9&is=683b9769&hm=b698a7d9db4245ded40112c220f81e07dee95543138f30b41954a939101aa9bc&" alt="Arceus X" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Arceus X</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/maaf8ltzq06828p/Arceus_X_1.6.9_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+     </div>
+      <div class="platform-label">VNG (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/dem5c5ojb0km8s1/Arceus_X_VNG_Ch%25C3%25ADnh_Th%25E1%25BB%25A9c_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">iOS</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/fczuwhx3ppgu73t/Arceus_X_IOS_NotWoops.ipa/file" target="_blank" rel="noopener">Download IPA</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CodeX -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1378341614023610408/tai_xuong.jpeg?ex=683ce8e9&is=683b9769&hm=638e31f9e5707daa99c3687bf60009843ea8dc3f45a37d8673778dc01716c0c8&" alt="CodeX" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">CodeX</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/n9c7cyk4e6j4692/Codex_v2.673_AC_Bypass_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">VNG (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/zujd9umu9tgcy8o/Codex_VNG_v2.672_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">iOS</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/cy582dwxfs2dgnz/Codex_V2.674_IOS_NotWoops.ipa/file" target="_blank" rel="noopener">Download IPA</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delta -->
+  <div class="executor-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSE_0jP0m-2BjIBHAaCQpGcw49Bkju32j9h646GiNrXw&s" alt="Delta" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Delta</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/am4t45c5kxll0mf/Delta_Qu%25E1%25BB%2591c_T%25E1%25BA%25BF_V2.674_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">VNG (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/e59fr09m14fim8r/Delta_VNG_V2.673_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">iOS</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/bo813j4hxg5wkm2/Delta_IOS_NotWoops.ipa/file" target="_blank" rel="noopener">Download IPA</a>
+      </div>
+      <div class="platform-label">Windows</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/cyb9ax9ewckuse4/Delta_Windows_NotWoops.zip/file" target="_blank" rel="noopener">Download EXE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fluxus -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1378702735196819476/tai_xuong.png?ex=683d907b&is=683c3efb&hm=9b97bdbce13e9dd9991633d1f9fbee8a98e4ddae2a8abc5240be5121d292dfff&" alt="Fluxus" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Fluxus</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/evnmglwiub24crg/Fluxus_Qu%25E1%25BB%2591c_T%25E1%25BA%25BF_V2.671_Update_UI_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">VNG (Android)</div>
+      <div class="download-links">
+        <a href="https://anotepad.com/note/read/wc78qck7" target="_blank" rel="noopener">Download APK</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Krnl -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1378702940432236564/tai_xuong_1.png?ex=683d90ac&is=683c3f2c&hm=5bae248e44b85b01dc0ff188264feec43326b5ee9ebd2441b008103ae4bc081e&" alt="Krnl" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Krnl</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/kw0if02v8o6p8qp/Krnl_Qu%25E1%25BB%2591c_T%25E1%25BA%25BF_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">VNG (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/1z17hrvs8jsttr7/Krnl_VNG_V2.672_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">iOS</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/t2xo8jyvsuxou3q/Krnl_IOS_NotWoops.ipa/file" target="_blank" rel="noopener">Download IPA</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swift -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1377641638565904556/Screenshot_20250529-203348_Chrome-removebg-preview.png?ex=683d0001&is=683bae81&hm=4201ca22311f9015d0b87fc4849b59cc1c03655d1087513cc5f0a3c4ffd5f75a&" alt="Swift" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Swift</div>
+     <div class="platform-label">Windows</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/s4iagwvytdcilzl/Swift_Update_NotWoops.exe/file" target="_blank" rel="noopener">Download EXE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trigon -->
+  <div class="executor-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDeWpnpmJySHa_LsiWgPrbsfUaMUzO-lw_rbNHCpWVUw&s" alt="Trigon" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Trigon</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/3b87e4diyjqpelh/Trigon_Qu%25E1%25BB%2591c_T%25E1%25BA%25BF_V2.673_NotWoops.apk/file" target="_blank" rel="noopener">Download 
+      </div>
+        <div class="platform-label">Windows</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/zh1waayc0ix12e6/Trigon_Windows.zip/file" target="_blank" rel="noopener">Download ZIP</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1378703410769170442/tai_xuong.jpeg?ex=683d911c&is=683c3f9c&hm=1a226771d2dd7fb77a3d380901169780b6bc3fc8d3dbc2933d65f3deea0dcd21&" alt="Wave" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Wave</div>
+      <div class="platform-label">Windows</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/xnrfh3dn6ah1517/Wave_Setup_NotWoops.exe/file" target="_blank" rel="noopener">Download EXE</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Spyder X -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1378687355405209641/Screenshot_20250601-164653_Chrome.jpg?ex=683d8228&is=683c30a8&hm=8895282f5b2c691c566caef357a06f1ae47d0538890bc7da0f1db6099ff47cea&" alt="Spyder X" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Spyder X</div>
+      <div class="platform-label">Windows</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/sb7dob1dakytd8a/Spyder+X+Windows+NotWoops.rar/file" target="_blank" rel="noopener">Download RAR</a>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <!-- Ronix -->
+  <div class="executor-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTit7-hEnYS4TXUZ0uOVFp2ZjBuqL2ktgnhdUSccMVw&s" alt="Ronix" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Ronix</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/eizmcow5i21hiut/Ronix_Android_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+   <div class="executor-card" 
+      <div class="platform-label">Windows</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/bunifooompdkajy/Bootstrapper.exe/file" target="_blank" rel="noopener">Download RAR</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Solara -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1378731567945355466/tai_xuong.jpeg?ex=683dab55&is=683c59d5&hm=e85039cc3a991a3d4e211cc30daa9e98143b8100cce715bfef86265930a5026c&" alt="Solara" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Solara</div>
+      <div class="platform-label">Windows</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/3434npfn95wrb4y/Solara_NotWoops.zip/file" target="_blank" rel="noopener">Download ZIP</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cryptic -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1378733921247952997/moonglow-HcoSKqMr-removebg-preview.png?ex=683dad86&is=683c5c06&hm=a0ff03e67284f3f60534d5e2d5a7aa8b93351e424377cac403172b5b626da1aa&" alt="Cryptic" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Cryptic</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/0swe87enf1regv4/Cryptic_Qu%25E1%25BB%2591c_T%25E1%25BA%25BF_VIP_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+     </div>
+      <div class="platform-label">VNG (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/76mseszf3uvzpiv/Cryptic_VNG_Ch%25C3%25ADnh_Th%25E1%25BB%25A9c_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+      <div class="platform-label">iOS</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/p22t6xplnpjriq2/Cryptic_IOS_NotWoops.ipa/file" target="_blank" rel="noopener">Download IPA</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Atlantis -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1379032325530189924/IMG_20250601_224920.jpg?ex=683ec36f&is=683d71ef&hm=e840ceb9b07d627ec814d13445b10ae2efc453d5daa54c89e098a350293438b9&" alt="Atlantis" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Atlantis</div>
+      <div class="platform-label">Windows</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/dafkgv5r64x7sre/ATLANTIS_M%25E1%25BB%259Bi_Nh%25E1%25BA%25A5t_NotWoops.rar/file" target="_blank" rel="noopener">Download RAR</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vega X -->
+  <div class="executor-card">
+    <img src="https://cdn.discordapp.com/attachments/1374360013719474208/1379035283370147930/V_logo_white-removebg-preview.png?ex=683ec630&is=683d74b0&hm=809d5abfc5a0b5f7c06493df4657e6b2faac1e99747ce55a35f71290eb351067&" alt="Vega X" class="executor-img" />
+    <div class="executor-info">
+      <div class="executor-name">Trigon</div>
+      <div class="platform-label">International (Android)</div>
+      <div class="download-links">
+        <a href="https://www.mediafire.com/file/7qmkz1hfd8oy4ah/Vega_X_Qu%25E1%25BB%2591c_T%25E1%25BA%25BF_NotWoops.apk/file" target="_blank" rel="noopener">Download APK</a>
+      </div>
+
+  </main>
+
+<footer>
+ &copy; Roblox Executors Dashboard 2025 ・ Developed by NotWoops
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
